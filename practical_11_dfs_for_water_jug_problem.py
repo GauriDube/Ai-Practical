@@ -4,7 +4,8 @@ def dfs(a, b, visited):
     if (a, b) in visited:
         return False
 
-    visited.add((a, b))
+    visited.add((a, b)) 
+    print("Current State:", a, b)
 
     if a == 0 and b == 1:
         print("Goal Reached:", a, b)
